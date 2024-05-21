@@ -1,12 +1,27 @@
-.card {
-   font-size: 0.8rem;
+/* Ver Mas*/
 
-   & .card__img-cont {
+.vermas__cont {
+   margin: 10px;
+   border: 2px solid black;
+   box-shadow: 5px 5px 15px -5px #002828;
+   width: 320px;
+   height: auto;
+   font-size: 0.9rem;
+   border-radius: 20px;
+   background-color: #F7F7F9;
+   padding: 15px;
+
+   position: sticky;
+   top: 10px;
+
+
+
+   & .vermas__img-cont {
       display: flex;
       justify-content: center;
    }
 
-   & .card__img-mini {
+   & .vermas__img-mini {
       border-radius: 5px;
       width: 200px;
       aspect-ratio: 1/1;
@@ -14,7 +29,7 @@
       object-position: center;
    }
 
-   & .card__tit-pre {
+   & .vermas__tit-pre {
       margin: 15px 0px;
       width: 100%;
       display: flex;
@@ -23,7 +38,7 @@
       align-items: center;
    }
 
-   & .card__tit {
+   & .vermas__tit {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
@@ -31,33 +46,38 @@
       font-style: italic;
    }
 
-   & .card__pre {
+   & .vermas__pre {
       font-size: 1.2rem;
       color: orangered;
    }
 
-   & .card__desc {
+   & .vermas__desc {
       font-size: 0.8rem;
       color: #008379;
       margin-bottom: 10px;
    }
 
-   & .card__btn-cont {
+   & .vermas__carrusel {
       display: flex;
       justify-content: center;
    }
 
-   & .card__btn {
+   & .vermas__btn-cont {
+      display: flex;
+      justify-content: center;
+   }
+
+   & .vermas__btn {
       border: none;
       background-color: #07d8c7;
       box-shadow: 5px 5px 15px -5px #002828;
-      margin:  10px;
+      margin: 10px;
       padding: 5px 15px;
       border-radius: 5px;
       cursor: pointer;
    }
 
-   & .card__btn:hover {
+   & .vermas__btn:hover {
 
       background-color: #008379;
    }

@@ -18,5 +18,8 @@ module.exports = {
 			{ allowConstantExport: true },
 		],
 		"react/prop-types": "off", //para que esLint no pida Validar los prop (arguemntos de las funciones)
+
+		//"react/jsx-uses-react": "error",
+		//"react/jsx-uses-vars": "error",
 	},
 };

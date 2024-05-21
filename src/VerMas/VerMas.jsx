@@ -1,34 +1,43 @@
 import { Carrusel } from "../Carrusel/Carrusel.jsx";
+import "./VerMas.css";
 
-export const VerMas = ({producto}) => {
-   const {
+export const VerMas = ({ unProducto, setUnProducto }) => {
+	const {
 		title,
-		brand,
 		description,
 		price,
-		thumbnail,
+		discountPercentage,
+		rating,
+		stock,
+		brand,
+		category,
 		images,
-	} = producto;
-  return (
-		<div className="card">
-			<div className="card__img-cont">
-				<img className="card__img-mini" src={thumbnail} alt="Imagen" />
-			</div>
+	} = unProducto;
 
-			<div className="card__tit-pre">
-				<div className="card__tit">
+	const cerrarVerMas = () => {
+		console.log("holaaa CERRAR ver mas");
+		setUnProducto(false);
+	};
+	return (
+		<div className="vermas__cont">
+			<div className="vermas__carrusel">{<Carrusel imagenes={images} />}</div>
+			<div className="vermas__tit-pre">
+				<div className="vermas__tit">
 					<p>{title}</p>
 					<p>{brand}</p>
 				</div>
-				<p className="card__pre"> ${price}</p>
+				<p className="vermas__pre"> ${price}</p>
 			</div>
-			<p className="card__desc"> {description}</p>
-
-			<div className="card__carrusel">{<Carrusel imagenes={images} />}</div>
-
-			<button >
-				Volcer
-			</button>
+			<p className="vermas__desc"> {description}</p>
+			<p>Descuento: {discountPercentage}</p>
+			<p>Clasificación (estrellas): {rating}</p>
+			<p>Stock: {stock}</p>
+			<p>Categoría: {category}</p>
+			<div className="vermas__btn-cont">
+				<button className="vermas__btn" onClick={cerrarVerMas}>
+					VOLVER
+				</button>
+			</div>
 		</div>
 	);
-}
+};

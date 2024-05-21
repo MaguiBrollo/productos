@@ -1,11 +1,10 @@
-//@ts-ignore
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 
 export const Carrusel = ({ imagenes }) => {
 	return (
 		<Splide
-			aria-label="Carrusel de Imagenes"
+			aria-label="Carrusel de Imágenes"
 			style={{
 				display: "flex",
 				justifyContent: "center",
@@ -16,7 +15,7 @@ export const Carrusel = ({ imagenes }) => {
 				rewindByDrag: true, //mover arrastrando
 				pagination: false, //saca los puntitos blancos
 				type: "slide", //dejar slide
-				width: "150px",
+				width: "220px", //tiene relación con el width de la img
 				arrows: "true", // Si usa flechas o no
 				keyborad: "global", //habilita atajos teclado
 				perPage: 1, //número de diapositivas que se mostrarán en una página.
@@ -34,7 +33,7 @@ export const Carrusel = ({ imagenes }) => {
 					<SplideSlide key={index}>
 						<img
 							style={{
-								width: "100px",
+								width: "220px",
 								aspectRatio: "1/1",
 								objectFit: "cover",
 								objectPposition: "center",
