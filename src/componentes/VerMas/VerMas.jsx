@@ -1,4 +1,5 @@
 import { Carrusel } from "../Carrusel/Carrusel.jsx";
+import { formatPesos } from "../../util/Funciones.jsx";
 import "./VerMas.css";
 
 export const VerMas = ({ unProducto, setUnProducto }) => {
@@ -26,10 +27,12 @@ export const VerMas = ({ unProducto, setUnProducto }) => {
 					<p>{title}</p>
 					<p>{brand}</p>
 				</div>
-				<p className="vermas__pre"> ${price}</p>
+				<p className="vermas__pre"> ${formatPesos(price)}</p>
 			</div>
 			<p className="vermas__desc"> {description}</p>
-			<p>Descuento: {discountPercentage}</p>
+			<p>
+				Descuento: % {formatPesos(discountPercentage)}
+			</p>
 			<p>Clasificación (estrellas): {rating}</p>
 			<p>Stock: {stock}</p>
 			<p>Categoría: {category}</p>

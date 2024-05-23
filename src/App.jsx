@@ -1,11 +1,12 @@
-import { Seccion } from "./Seccion/Seccion.jsx";
-
+import { Seccion } from "./componentes/Seccion/Seccion.jsx";
+import { CarruselInfinito } from "./componentes/CarruselInfinito/CarruselInfinito.jsx";
 import "./App.css";
 
 function App() {
 	return (
 		<>
-			<p>Página Principal (API)</p>
+			<CarruselInfinito />
+			<p className="app__titulo">Tienda de Productos</p>
 			<Seccion />
 		</>
 	);

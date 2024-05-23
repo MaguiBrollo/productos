@@ -1,4 +1,12 @@
 /* ============================= CONFIG GENERAL =============================*/
+
+
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("../public/fonts/JosefinSans-VariableFont_wght.ttf");
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -11,6 +19,7 @@ html {
 }
 
 body {
+
   min-height: 100vh;
   min-width: 320px;
   background-color: #008379;
@@ -18,6 +27,6 @@ body {
   flex-direction: column;
   align-items: center;
   place-items: center;
-  font-family: 'Lora', serif;
-}
 
+  font-family: "Josefin Sans", sans-serif;
+}

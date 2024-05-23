@@ -1,0 +1,9 @@
+.slide__item {
+   padding-inline: 5px;
+   display: inline-block;
+}
+
+.slide__img {
+   border-radius: 10px;
+   width: 110px;
+}

@@ -36,6 +36,6 @@
 }
 
 .container {
-   border: 1px solid #001f1c;
+   /* border: 1px solid #001f1c; */
    /*  display: none;  hace desaparecer el borde, lo dejo porque queda lindo*/
 }

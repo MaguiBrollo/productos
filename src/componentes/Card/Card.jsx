@@ -1,3 +1,4 @@
+import { formatPesos } from "../../util/Funciones.jsx";
 import "./Card.css";
 
 export const Card = ({ producto, setUnProducto }) => {
@@ -6,12 +7,7 @@ export const Card = ({ producto, setUnProducto }) => {
 		setUnProducto(producto);
 	};
 
-	function formatPesos(num) {
-		return num.toLocaleString("es-ES", {
-			minimumFractionDigits: 2,
-			maximumFractionDigits: 2,
-		});
-	}
+	
 	const { title, brand, description, price, thumbnail } = producto;
 
 	return (

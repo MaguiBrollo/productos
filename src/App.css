@@ -4,3 +4,11 @@
    padding: 2rem;
 
 }
+
+.app__titulo{
+   border: 2px solid #001f1c;
+   padding: 10px;
+   font-size: 1.6rem;
+   text-align: center;
+   margin-top: 15px;
+}
