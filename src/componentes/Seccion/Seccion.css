@@ -2,24 +2,24 @@
    display: flex;
    flex-direction: row;
 
-   .productos__todos {
+   & .productos__todos {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      margin: 0px auto;
+   }
 
-      & .productos__card {
-         margin: 10px;
-         box-shadow: 5px 5px 15px -5px #002828;
-         width: 250px;
-         height: auto;
-         font-size: 0.9rem;
-         border-radius: 20px;
-         background-color: #F7F7F9;
-         padding: 15px;
-      }
+   & .productos__card {
+      margin: 15px;
+      box-shadow: 5px 5px 15px -5px #002828;
+      width: 95%;
+      height: auto;
+      font-size: 0.9rem;
+      border-radius: 10px;
+      background-color: #F7F7F9;
+   }
 
-      & .productos__card:hover {
-         transform: translateY(-10px);
-      }
+   & .productos__card:hover {
+      transform: translateY(-10px);
    }
 
 }
@@ -36,6 +36,7 @@
 }
 
 .container {
-   /* border: 1px solid #001f1c; */
-   /*  display: none;  hace desaparecer el borde, lo dejo porque queda lindo*/
+   border: 1px solid #001f1c;
+   display: none;
+   /*  hace desaparecer el borde, lo dejo porque queda lindo*/
 }

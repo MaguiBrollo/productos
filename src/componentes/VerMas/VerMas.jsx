@@ -29,13 +29,14 @@ export const VerMas = ({ unProducto, setUnProducto }) => {
 				</div>
 				<p className="vermas__pre"> ${formatPesos(price)}</p>
 			</div>
-			<p className="vermas__desc"> {description}</p>
-			<p>
-				Descuento: % {formatPesos(discountPercentage)}
-			</p>
-			<p>Clasificación (estrellas): {rating}</p>
-			<p>Stock: {stock}</p>
-			<p>Categoría: {category}</p>
+			<div className="vermas__datos">
+				<p className="vermas__desc"> {description}</p>
+				<p>Descuento: % {formatPesos(discountPercentage)}</p>
+				<p>Clasificación (estrellas): {rating}</p>
+				<p>Stock: {stock}</p>
+				<p>Categoría: {category}</p>
+			</div>
+
 			<div className="vermas__btn-cont">
 				<button className="vermas__btn" onClick={cerrarVerMas}>
 					VOLVER

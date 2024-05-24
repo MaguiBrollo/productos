@@ -1,20 +1,26 @@
 .card {
    font-size: 0.8rem;
+   height: 100%;
 
+  /*  & .card__cont{
+      height: 85%;
+   } */
    & .card__img-cont {
       display: flex;
       justify-content: center;
+      padding: 0px 15px;
    }
 
    & .card__img-mini {
       border-radius: 5px;
-      width: 200px;
+      width: 250px;
       aspect-ratio: 1/1;
       object-fit: cover;
       object-position: center;
    }
 
    & .card__tit-pre {
+      padding: 0px 15px;
       margin: 15px 0px;
       width: 100%;
       display: flex;
@@ -28,7 +34,6 @@
       flex-direction: column;
       justify-content: flex-start;
       font-weight: 600;
-      font-style: italic;
    }
 
    & .card__pre {
@@ -37,28 +42,31 @@
    }
 
    & .card__desc {
+      padding: 5px 15px;
       font-size: 0.8rem;
       color: #008379;
       margin-bottom: 10px;
    }
 
    & .card__btn-cont {
+      height: 15%;
       display: flex;
       justify-content: center;
+      background-color: #77d4cd;
+      border-radius: 0px 0px 10px 10px ;
    }
 
    & .card__btn {
       border: none;
-      background-color: #07d8c7;
       box-shadow: 5px 5px 15px -5px #002828;
-      margin:  10px;
+      margin: 10px;
       padding: 5px 15px;
       border-radius: 5px;
       cursor: pointer;
    }
 
    & .card__btn:hover {
-
-      background-color: #008379;
+      background-color: #bfede7;
+      font-weight: 700;
    }
 }

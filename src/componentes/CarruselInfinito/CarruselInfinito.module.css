@@ -9,8 +9,6 @@
 }
 
 .contenedor {
-   
-   margin: auto;
    white-space: nowrap;
    overflow: hidden;
 }
@@ -18,5 +16,4 @@
 .lista {
    animation: 25s slide infinite linear;
    display: inline-block;
-  
 }

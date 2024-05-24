@@ -46,6 +46,7 @@ export const Seccion = () => {
 	return (
 		<>
 			<div className="container">{data}</div>
+			
 			<div className="productos__cont">
 				<div className="productos__todos">
 					{productos.map((prod) => {

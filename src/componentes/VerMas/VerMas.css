@@ -7,29 +7,19 @@
    width: 320px;
    height: auto;
    font-size: 0.9rem;
-   border-radius: 20px;
+   border-radius: 10px;
    background-color: #F7F7F9;
-   padding: 15px;
-
    position: sticky;
    top: 10px;
 
 
-
-   & .vermas__img-cont {
+   & .vermas__carrusel {
       display: flex;
       justify-content: center;
    }
 
-   & .vermas__img-mini {
-      border-radius: 5px;
-      width: 200px;
-      aspect-ratio: 1/1;
-      object-fit: cover;
-      object-position: center;
-   }
-
    & .vermas__tit-pre {
+      padding: 0px 15px;
       margin: 15px 0px;
       width: 100%;
       display: flex;
@@ -51,25 +41,25 @@
       color: orangered;
    }
 
+   & .vermas__datos {
+      padding: 0px 15px;
+   }
+
    & .vermas__desc {
       font-size: 0.8rem;
       color: #008379;
       margin-bottom: 10px;
    }
 
-   & .vermas__carrusel {
-      display: flex;
-      justify-content: center;
-   }
-
    & .vermas__btn-cont {
       display: flex;
       justify-content: center;
+      background-color: #77d4cd;
+      border-radius: 0px 0px 10px 10px;
    }
 
    & .vermas__btn {
       border: none;
-      background-color: #07d8c7;
       box-shadow: 5px 5px 15px -5px #002828;
       margin: 10px;
       padding: 5px 15px;
@@ -78,7 +68,7 @@
    }
 
    & .vermas__btn:hover {
-
-      background-color: #008379;
+      background-color: #bfede7;
+      font-weight: 700;
    }
 }

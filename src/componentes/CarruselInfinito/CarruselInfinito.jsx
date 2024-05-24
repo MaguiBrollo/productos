@@ -9,6 +9,9 @@ import im5 from "../../assets/ImgCarrusel/deco2.jpg";
 import im6 from "../../assets/ImgCarrusel/deco3.jpg";
 import im7 from "../../assets/ImgCarrusel/note.jpeg";
 import im8 from "../../assets/ImgCarrusel/perfumes.jpg";
+import im9 from "../../assets/ImgCarrusel/champu.jpg";
+import im10 from "../../assets/ImgCarrusel/labial1.jpg";
+import im11 from "../../assets/ImgCarrusel/perfumes2.jpg";
 
 export const CarruselInfinito = () => {
 	return (
@@ -22,6 +25,9 @@ export const CarruselInfinito = () => {
 				<CarruselImg imgUrl={im6} />
 				<CarruselImg imgUrl={im7} />
 				<CarruselImg imgUrl={im8} />
+				<CarruselImg imgUrl={im9} />
+				<CarruselImg imgUrl={im10} />
+				<CarruselImg imgUrl={im11} />
 			</ul>
 			<ul className={`${estiloCarrusel.lista} list1`}>
 				<CarruselImg imgUrl={im1} />
@@ -32,8 +38,10 @@ export const CarruselInfinito = () => {
 				<CarruselImg imgUrl={im6} />
 				<CarruselImg imgUrl={im7} />
 				<CarruselImg imgUrl={im8} />
+				<CarruselImg imgUrl={im9} />
+				<CarruselImg imgUrl={im10} />
+				<CarruselImg imgUrl={im11} />
 			</ul>
-         
 		</div>
 	);
 };
