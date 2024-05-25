@@ -22,7 +22,7 @@ export const Carrusel = ({ imagenes }) => {
 				//gap: "15px",
 				perMove: 1, //número de diapositivas que se moverán a la vez
 				drag: "free", //si se permite al usuario arrastrar el carrusel o no
-				autoplay: "true", //reproducción automática o no
+				autoplay: true, //reproducción automática o no
 				rewind: true, //si se rebobina
 				pauseOnHover: false,
 				resetProgress: false,

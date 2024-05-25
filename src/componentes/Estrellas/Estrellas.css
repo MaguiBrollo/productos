@@ -1,0 +1,28 @@
+.estrellas__cont {
+   display: flex;
+   justify-content: center;
+
+   & .estrellas__vacia {
+      display: inline-block;
+      position: relative;
+      font-family: FontAwesome;
+   }
+
+   & .estrellas__vacia::before {
+      content: "\f006 \f006 \f006 \f006 \f006";
+   }
+
+   & .estrellas__color {
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 50%;
+   }
+
+   & .estrellas__color::before {
+      content: "\f005 \f005 \f005 \f005 \f005";
+      color: #e63504;
+   }
+}

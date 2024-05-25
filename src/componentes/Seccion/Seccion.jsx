@@ -11,6 +11,8 @@ export const Seccion = () => {
 	const [productos, setProductos] = useState([]);
 	const [unProducto, setUnProducto] = useState(false);
 
+	const [ancho, setAncho] = useState(100);
+
 	useEffect(() => {
 		setTimeout(() => {
 			setData("");
@@ -46,20 +48,20 @@ export const Seccion = () => {
 	return (
 		<>
 			<div className="container">{data}</div>
-			
+
 			<div className="productos__cont">
-				<div className="productos__todos">
+				<div style={{width:`${ancho}%`}} className="productos__todos ">
 					{productos.map((prod) => {
 						return (
 							<div className="productos__card" key={prod.id}>
-								<Card producto={prod} setUnProducto={setUnProducto} />
+								<Card producto={prod} setUnProducto={setUnProducto}/>
 							</div>
 						);
 					})}
 				</div>
 				{unProducto ? (
-					<div>
-						<VerMas unProducto={unProducto} setUnProducto={setUnProducto} />
+					<div className="productos__uno">
+						<VerMas unProducto={unProducto} setUnProducto={setUnProducto} setAncho={setAncho} />
 					</div>
 				) : (
 					""

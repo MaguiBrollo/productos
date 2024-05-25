@@ -1,8 +1,9 @@
 import { Carrusel } from "../Carrusel/Carrusel.jsx";
 import { formatPesos } from "../../util/Funciones.jsx";
+import { Estrellas } from "../Estrellas/Estrellas.jsx";
 import "./VerMas.css";
 
-export const VerMas = ({ unProducto, setUnProducto }) => {
+export const VerMas = ({ unProducto, setUnProducto, setAncho }) => {
 	const {
 		title,
 		description,
@@ -15,8 +16,10 @@ export const VerMas = ({ unProducto, setUnProducto }) => {
 		images,
 	} = unProducto;
 
+	setAncho(70);
+
 	const cerrarVerMas = () => {
-		console.log("holaaa CERRAR ver mas");
+		setAncho(100);
 		setUnProducto(false);
 	};
 	return (
@@ -29,10 +32,10 @@ export const VerMas = ({ unProducto, setUnProducto }) => {
 				</div>
 				<p className="vermas__pre"> ${formatPesos(price)}</p>
 			</div>
+			<Estrellas estrellas={rating} />
 			<div className="vermas__datos">
 				<p className="vermas__desc"> {description}</p>
-				<p>Descuento: % {formatPesos(discountPercentage)}</p>
-				<p>Clasificación (estrellas): {rating}</p>
+				<p>Descuento: {formatPesos(discountPercentage)}% </p>
 				<p>Stock: {stock}</p>
 				<p>Categoría: {category}</p>
 			</div>
