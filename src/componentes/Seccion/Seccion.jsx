@@ -50,18 +50,26 @@ export const Seccion = () => {
 			<div className="container">{data}</div>
 
 			<div className="productos__cont">
-				<div style={{width:`${ancho}%`}} className="productos__todos ">
+				<div style={{ width: `${ancho}%` }} className="productos__todos ">
 					{productos.map((prod) => {
 						return (
 							<div className="productos__card" key={prod.id}>
-								<Card producto={prod} setUnProducto={setUnProducto}/>
+								<Card
+									producto={prod}
+									setUnProducto={setUnProducto}
+									setAncho={setAncho}
+								/>
 							</div>
 						);
 					})}
 				</div>
 				{unProducto ? (
 					<div className="productos__uno">
-						<VerMas unProducto={unProducto} setUnProducto={setUnProducto} setAncho={setAncho} />
+						<VerMas
+							unProducto={unProducto}
+							setUnProducto={setUnProducto}
+							setAncho={setAncho}
+						/>
 					</div>
 				) : (
 					""

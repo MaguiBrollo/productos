@@ -16,8 +16,6 @@ export const VerMas = ({ unProducto, setUnProducto, setAncho }) => {
 		images,
 	} = unProducto;
 
-	setAncho(70);
-
 	const cerrarVerMas = () => {
 		setAncho(100);
 		setUnProducto(false);

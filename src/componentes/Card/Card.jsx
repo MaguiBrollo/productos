@@ -1,8 +1,9 @@
 import { formatPesos } from "../../util/Funciones.jsx";
 import "./Card.css";
 
-export const Card = ({ producto, setUnProducto}) => {
+export const Card = ({ producto, setUnProducto, setAncho}) => {
 	const verMas = () => {
+		setAncho(70);
 		setUnProducto(producto);
 	};
 

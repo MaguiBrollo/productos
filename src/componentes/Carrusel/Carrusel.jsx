@@ -1,4 +1,5 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
+import uuid from "react-uuid"; //para generar ID random, y que no se repitan
 import "@splidejs/react-splide/css";
 
 export const Carrusel = ({ imagenes }) => {
@@ -28,9 +29,9 @@ export const Carrusel = ({ imagenes }) => {
 				resetProgress: false,
 			}}
 		>
-			{imagenes.map((img, index) => {
+			{imagenes.map((img) => {
 				return (
-					<SplideSlide key={index}>
+					<SplideSlide key={uuid()}>
 						<img
 							style={{
 								width: "220px",
@@ -47,3 +48,24 @@ export const Carrusel = ({ imagenes }) => {
 		</Splide>
 	);
 };
+
+/*  ver docu: https://www.npmjs.com/package/react-uuid
+NO usar INDEX para el KEY de un map
+
+{imagenes.map((img, index) => {
+				return (
+					<SplideSlide key={index}>
+						<img
+							style={{
+								width: "220px",
+								aspectRatio: "1/1",
+								objectFit: "cover",
+								objectPposition: "center",
+							}}
+							src={img}
+							alt="Imagen del producto"
+						/>
+					</SplideSlide>
+				);
+			})}
+*/
